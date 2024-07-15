@@ -10,7 +10,8 @@ def add_to_autostart(STARTUP_PATH: str, NAME: str, PATH: str):
     # Check if This application already is in Autostart
     if(not check_autostart(STARTUP_PATH, NAME)):
         shortcut = os.path.join(STARTUP_PATH, NAME + ".bat")
-        content = "@echo off\n" + PATH + "\n"
+
+        content = "@echo off\n" + PATH + "\n" # Manually set this
 
         # Creates Shortcut
         with open(shortcut, "w") as file:
