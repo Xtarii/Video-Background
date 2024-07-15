@@ -1,3 +1,2 @@
-import auto_start # Application Autostart
-import video # Application Video
-import win_event # Windows Event
+from .auto_start import * # Application Autostart
+from .video import * # Application Video
