@@ -11,7 +11,8 @@ STARTUP_PATH = BASE + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Progr
 
 
 if __name__ == "__main__":
-    auto_start.add_to_autostart(STARTUP_PATH, NAME, PATH) # Adds to Autostart
+    auto_start.add_to_autostart(STARTUP_PATH, NAME,
+        BASE + "\\Desktop\\Narcissistic Background.exe") # Adds to Autostart
 
     # Main Application
     background = video.VideoCapture(BASE)
